@@ -19,5 +19,35 @@
       <div id="content" class="simulate-mobile">
       </div>
 
+       <script type="text/template" id="message-general-template">
+        <div class="top-menu">
+            <h1>Inbox</h1>
+        </div>
+        <div id="messages">
+        </div>
+      </script>
+
+      <script type="text/template" id="message-row-template">
+        <div class="row">
+            <h3><%= subject %></h3>
+            <h4><%= from %></h4>
+            <p class="sentence"><%= sentence %></p>
+        </div>
+      </script>
+
+      <script type="text/template" id="message-detail-template">
+        <div class="top-menu">
+            <span class= "left-nav">&lt;</span>
+            <h1><%= subject %></h1>
+        </div>
+
+        <div class="message-details">
+            <h3><%= from %></h3>
+            <h4><%= time_received %></h4>
+            <p><%= body %></p>
+        </div>
+
+      </script>
+
     </body>
 </html>
